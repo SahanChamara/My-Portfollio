@@ -29,10 +29,14 @@ body{
     color: var(--text-color);
 }
 
-.mlogo{
+.logo{
     color: var(--text-color);
 }
 
+section{
+    min-height: 100vh;
+    padding: 10rem 9% 2rem;
+}
 
 .header {
     position: fixed;
@@ -69,4 +73,80 @@ body{
     font-size: 3.6rem;
     color: var(--text-color);
     display: none;
+}
+
+.home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-content h3{
+    font-size: 3.2rem;
+
+
+}
+
+.main-img{
+    /* width: 10rem;
+    height: 10rem; */
+    z-index: 3;
+    width: 325px;
+    height: 390px;
+}
+
+.box{
+    position: relative;
+    width: 410px;
+    height: 405px;
+    background: rgba(0, 0, 0, 0.75);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.box::after{
+    content: '';
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    background-image: conic-gradient(transparent,transparent,transparent,#d400d4);
+    animation: animate 4s linear infinite;
+    animation-delay: -2s; 
+}
+
+.box::before{
+    content: '';
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    background-image: conic-gradient(transparent,transparent,transparent,#00ccff);
+    animation: animate 4s linear infinite;
+}
+
+@keyframes animate{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.box span{
+    position: absolute;
+    inset: 5px;
+    border-radius: 16px;
+    background: #0c1022;
+    z-index: 1;
+}
+
+.box img{
+    position: relative;
+    z-index: 2;
+    width: 340px;
+    height: 390px;
+    border-radius: 16px;
 }
