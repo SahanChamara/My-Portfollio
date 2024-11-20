@@ -910,7 +910,7 @@ span {
     }
 } 
 
-@media(max-width: 768px){
+/* @media(max-width: 768px){
     #mIcon{
         display: block;
     }
@@ -977,7 +977,7 @@ span {
     .project-container{
         grid-template-columns: repeat(2, 1fr);
     }
-} 
+}  */
 
 @media (max-width: 768px) {
   /* Navbar adjustments */
@@ -995,6 +995,8 @@ span {
       flex-direction: column;
       align-items: center;
   }
+
+  
 
   .navbar.active {
       display: flex;
@@ -1031,8 +1033,13 @@ span {
 
   /* Images */
   .home img, .about img {
-      width: 90%;
+      width: 95%;
       margin: auto;
+  }
+
+  .box{
+    width: 70vw;
+    margin-top: 4rem;
   }
 }
 
