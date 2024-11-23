@@ -138,13 +138,10 @@ span {
 }
 
 .box {
-    position: relative;
-    /* width: 410px;
-    height: 405px; */
+    position: relative;    
     width: 62rem;
     height: 35rem;
-    background: rgba(0, 0, 0, 0.75);
-    /* border-radius: 20px; */
+    background: rgba(0, 0, 0, 0.75);    
     border-radius: 3rem;
     display: flex;
     justify-content: center;
@@ -910,6 +907,8 @@ span {
     }
 } 
 
+
+/* meka kohomath comment karala thibbe */
 /* @media(max-width: 768px){
     #mIcon{
         display: block;
@@ -980,7 +979,7 @@ span {
 }  */
 
 @media (max-width: 768px) {
-  /* Navbar adjustments */
+  
   #mIcon {
       display: block;
   }
@@ -1005,7 +1004,7 @@ span {
   .navbar a {
       font-size: 2rem;
       margin: 1rem 0;
-  }
+  } 
 
   /* Adjust sections */
   .home {
@@ -1022,6 +1021,24 @@ span {
       text-align: center;
   }
 
+  .about-img{
+    width: 60vw;
+    box-shadow: 0 0 1rem var(--main-color);
+    padding: 1.2rem;
+
+  }
+
+  .main-img{
+    position: relative;
+    width: 100vw;
+
+  }
+
+  .heading{      
+      text-align: center;
+      align-items: center;      
+  }
+
   .project-container {
       grid-template-columns: repeat(1, 1fr);
       gap: 2rem;
@@ -1031,7 +1048,7 @@ span {
       flex-direction: column;
   }
 
-  /* Images */
+
   .home img, .about img {
       width: 95%;
       margin: auto;
@@ -1042,6 +1059,11 @@ span {
     margin-top: 4rem;
   }
 }
+
+
+
+
+
 
 
 
