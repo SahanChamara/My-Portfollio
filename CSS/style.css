@@ -887,7 +887,7 @@ span {
 
   @media (max-width:991px){
     .header{
-        padding: 2rem 3%;
+      padding: 2rem 15%;
 
     }
     section{
@@ -926,7 +926,7 @@ span {
     }
 
     .navbar.active{
-        display: block;
+        display: flex;
     }
 
     .navbar a{
@@ -994,9 +994,6 @@ span {
       flex-direction: column;
       align-items: center;
   }
-
-  
-
   .navbar.active {
       display: flex;
   }
@@ -1005,8 +1002,7 @@ span {
       font-size: 2rem;
       margin: 1rem 0;
   } 
-
-  /* Adjust sections */
+  
   .home {
       flex-direction: column;
       text-align: center;
@@ -1059,13 +1055,3 @@ span {
     margin-top: 4rem;
   }
 }
-
-
-
-
-
-
-
-
-
-
